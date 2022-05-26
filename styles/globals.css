@@ -94,6 +94,9 @@ a {
     -webkit-transition: all 0.7s;
     -o-transition: all 0.7s;
     transition: all 0.7s;
+	background-color: #000;
+	mix-blend-mode: screen;
+	backdrop-filter: blur(50px);
 }
 .glow{
 	-moz-transition: all 0.2s ease-in;
