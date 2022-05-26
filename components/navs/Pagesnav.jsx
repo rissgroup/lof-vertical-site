@@ -40,10 +40,10 @@ export default function Example() {
                     <div className="hidden md:block ">
                       <div className="flex items-baseline space-x-3 ">
                         {navigation.map((item) => (
-                          <Link  href={item.href} >
+                          <Link  href={item.href} key={item.name}>
                           
                           <a
-                            key={item.name}
+                            
                             // href={item.href}
                             className={classNames(
                               item.current
