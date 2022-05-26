@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import Logo from "../../public/assets/logo.png";
+import Link from 'next/link'
 
 import Image from "next/image";
 
@@ -39,9 +40,11 @@ export default function Example() {
                     <div className="hidden md:block ">
                       <div className="flex items-baseline space-x-3 ">
                         {navigation.map((item) => (
+                          <Link  href={item.href} >
+                          
                           <a
                             key={item.name}
-                            href={item.href}
+                            // href={item.href}
                             className={classNames(
                               item.current
                                 ? " text-white nav-link"
@@ -52,6 +55,7 @@ export default function Example() {
                           >
                             {item.name}
                           </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
