@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Fullscroll from '../components/Fullscroll';
 import RingLoader from "react-spinners/RingLoader";
 import { css } from "@emotion/react";
+import SimplePage from '../components/SimplePage';
 
 
 const override = css`
@@ -39,7 +40,7 @@ setLoading(false)
         loading ?
         <RingLoader color={'#d8aaf8'} loading={loading} css={override} size={150} />               
         :
-<Fullscroll/>
+     <SimplePage/>
       }
     </>
   )
